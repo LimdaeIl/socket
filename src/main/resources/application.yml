@@ -1,0 +1,25 @@
+server:
+  port: 7002
+
+springdoc:
+  swagger-ui:
+    enabled: true
+    operations-sorter: method
+
+spring:
+  application:
+    name: socket
+
+  datasource:
+    url: jdbc:mysql://localhost:3003/Spring_Chatting
+    username: chatting
+    password: chatting
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    show-sql: true
+
+token:
+  secret-key: "SECRET"
+  refresh-secret-key: "REFRESH_SECRET"
+  token-time: 300
+  refresh-token-time: 300
