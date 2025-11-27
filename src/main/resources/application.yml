@@ -17,9 +17,11 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
   jpa:
     show-sql: true
+    hibernate:
+      ddl-auto: update
 
 token:
-  secret-key: "SECRET"
-  refresh-secret-key: "REFRESH_SECRET"
-  token-time: 300
-  refresh-token-time: 300
+  secret-key: "this-is-a-very-long-secret-key-for-access-token-123456"
+  refresh-secret-key: "this-is-a-very-long-secret-key-for-refresh-token-abcdef"
+  token-time: 60
+  refresh-token-time: 1440
